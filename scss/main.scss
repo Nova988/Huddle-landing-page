@@ -1,0 +1,19 @@
+@import "variables";
+@import "main-styles";
+
+// Logo styles
+#main-header {
+  .logo {
+    max-width: 20%;
+    padding: 2rem 0;
+  }
+}
+
+// Main section
+#landing-page {
+  .grid-container {
+    grid-gap: 2rem;
+
+    // image style
+  }
+}
