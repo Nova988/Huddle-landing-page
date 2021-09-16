@@ -1,2 +1,50 @@
+@media screen and (max-width: 500px) {
+  body {
+    background: url("../images/bg-mobile.svg") no-repeat top $purple;
+  }
 
-  
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+  .grid-media {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 70%;
+  }
+
+  #main-header {
+    .logo {
+      max-width: 150px;
+    }
+  }
+
+  #landing-page {
+    .grid-container {
+      .text {
+        text-align: center;
+        padding-top: 2rem;
+
+        p {
+          padding-bottom: 1.5rem;
+        }
+      }
+      .socials {
+        grid-column: 1/2;
+        justify-self: center;
+        padding: 2rem 0;
+
+        div {
+          i {
+            border-width: 1px;
+          }
+        }
+      }
+    }
+  }
+}

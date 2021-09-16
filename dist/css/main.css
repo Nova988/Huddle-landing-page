@@ -11,26 +11,29 @@ body {
   font-weight: 400;
   color: #fff;
   line-height: 1.4;
-  min-height: 100vh;
-  width: 100%; }
+  min-height: 100vh; }
 
 h1 {
+  font-family: "Poppins", sans-serif;
   color: #fff;
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding-bottom: 1rem 0; }
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem; }
 
 h2 {
   font-size: 1.2rem; }
 
+img {
+  width: 100%; }
+
 .container {
-  width: 1200px;
-  height: 100%;
+  max-width: 1200px;
+  min-height: 100%;
   margin: auto; }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1.25fr 1fr; }
 
 .flex-container {
   display: flex;
@@ -66,16 +69,17 @@ h2 {
   padding-right: 4rem; }
 
 .btn {
-  width: 100%;
-  padding: 1rem 0;
+  padding: 0.75rem 3.5rem;
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1.05rem; }
-  .btn-light {
-    background: yellow;
+  border-radius: 2rem;
+  font-size: 1.05rem;
+  color: #674baf;
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.4);
+  transition: background-color 200ms ease-out, color 200ms ease-out; }
+  .btn:hover {
+    background-color: #e882e8;
     color: #fff;
-    font-weight: 500;
-    box-shadow: 0px 5px 10px 0px rgba(26, 52, 97, 0.2); }
+    cursor: pointer; }
 
 #main-header .logo {
   max-width: 20%;
@@ -83,3 +87,52 @@ h2 {
 
 #landing-page .grid-container {
   grid-gap: 2rem; }
+  #landing-page .grid-container .image {
+    padding-top: 2rem; }
+  #landing-page .grid-container .text {
+    padding-top: 5rem; }
+    #landing-page .grid-container .text p {
+      padding-bottom: 1rem; }
+  #landing-page .grid-container .socials {
+    grid-column: 1/4;
+    justify-self: flex-end; }
+    #landing-page .grid-container .socials div {
+      padding: 0 0.5rem; }
+    #landing-page .grid-container .socials i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px #fff solid;
+      padding: 0.5rem;
+      border-radius: 50%;
+      min-width: 35px;
+      transition: color 200ms ease-out, border-color 200ms ease-out; }
+      #landing-page .grid-container .socials i:hover {
+        color: #e882e8;
+        border-color: #e882e8;
+        cursor: pointer; }
+
+@media screen and (max-width: 500px) {
+  body {
+    background: url("../images/bg-mobile.svg") no-repeat top #674baf; }
+  h1 {
+    font-size: 1.5rem; }
+  .container {
+    padding: 0 2rem; }
+  .grid-media {
+    grid-template-columns: 1fr; }
+  .btn {
+    width: 70%; }
+  #main-header .logo {
+    max-width: 150px; }
+  #landing-page .grid-container .text {
+    text-align: center;
+    padding-top: 2rem; }
+    #landing-page .grid-container .text p {
+      padding-bottom: 1.5rem; }
+  #landing-page .grid-container .socials {
+    grid-column: 1/2;
+    justify-self: center;
+    padding: 2rem 0; }
+    #landing-page .grid-container .socials div i {
+      border-width: 1px; } }

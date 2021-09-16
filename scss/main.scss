@@ -14,6 +14,42 @@
   .grid-container {
     grid-gap: 2rem;
 
-    // image style
+    .image {
+      padding-top: 2rem;
+    }
+    .text {
+      padding-top: 5rem;
+
+      p {
+        padding-bottom: 1rem;
+      }
+    }
+    .socials {
+      grid-column: 1/4;
+      justify-self: flex-end;
+
+      div {
+        padding: 0 0.5rem;
+      }
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px #fff solid;
+        padding: 0.5rem;
+        border-radius: 50%;
+        min-width: 35px;
+        transition: color 200ms ease-out, border-color 200ms ease-out;
+
+        &:hover {
+          color: $soft-magenta;
+          border-color: $soft-magenta;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
+
+@import "media";
